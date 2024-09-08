@@ -1,6 +1,17 @@
 # portfolio-project-doc
 
+## Goal
+
 In this repository there will be architecture design of said project with diagram and explanations of each part of this microesvices architecture project
+
+## Guidelines of this project
+
+1. Microservices architecture and complimentary technologies used (kubernetes, cloud, on premise, message bus...)
+2. OOP design patterns usage in architecture design step
+3. Follow Clean code (book) prinicples
+4. Test coverage above 90% - naming pattern MethodName_ShouldDoGet_WhenSomething
+
+## Service Table
 
 | Services               | Description                                                   | Will be implemented |
 | ---------------------- | ------------------------------------------------------------- | ------------------- |
@@ -14,5 +25,7 @@ In this repository there will be architecture design of said project with diagra
 | Authentication Service | Authenticates incoming requests                               | no                  |
 | Search Service         | Provides search functionality for tasks and users             | no                  |
 | Comment Service        | Allows users to comment on tasks                              | no                  |
+
+## Architecture Diagram
 
 ![alt text](https://github.com/xxsawa/portfolio-project-doc/blob/main/portfolio-project-architecture.drawio.png)
