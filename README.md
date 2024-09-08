@@ -11,21 +11,35 @@ In this repository there will be architecture design of said project with diagra
 3. Follow Clean code (book) prinicples
 4. Test coverage above 90% - naming pattern MethodName_ShouldDoGet_WhenSomething
 
+## Service file structure is
+
+- ./ - service logic
+- ./models
+- ./controller
+- ./otherServiceUsed - can be multiple
+- ./otherServiceUsed/models
+- ./otherServiceUsed/endpoints
+
 ## Service Table
 
-| Services               | Description                                                   | Will be implemented |
-| ---------------------- | ------------------------------------------------------------- | ------------------- |
-| User Service           | Handles user authentication and profile management            | yes                 |
-| Task Service           | Manages tasks (create, update, delete)                        | yes                 |
-| Notification Service   | Sends notifications                                           | yes                 |
-| File Upload Service    | Manages file uploads and stores them in blob storage          | yes                 |
-| Reporting Service      | Generates reports based on task data                          | yes                 |
-| Audit Service          | Logs user actions for audit purposes                          | yes                 |
-| Router Service         | Routes incoming api requests onto services (File and User S.) | yes                 |
-| Authentication Service | Authenticates incoming requests                               | no                  |
-| Search Service         | Provides search functionality for tasks and users             | no                  |
-| Comment Service        | Allows users to comment on tasks                              | no                  |
+| Is implemented | Services               | Description                                                   | Will be implemented |
+| -------------- | ---------------------- | ------------------------------------------------------------- | ------------------- |
+| no             | Message bus            | Recieves and sends messages                                   | yes                 |
+| no             | User Service           | Handles user authentication and profile management            | yes                 |
+| no             | Task Service           | Manages tasks (create, update, delete)                        | yes                 |
+| no             | Notification Service   | Sends notifications                                           | yes                 |
+| no             | File Upload Service    | Manages file uploads and stores them in blob storage          | yes                 |
+| no             | Reporting Service      | Generates reports based on task data                          | yes                 |
+| no             | Audit Service          | Logs user actions for audit purposes                          | yes                 |
+| no             | Router Service         | Routes incoming api requests onto services (File and User S.) | yes                 |
+| no             | Authentication Service | Authenticates incoming requests                               | no                  |
+| no             | Search Service         | Provides search functionality for tasks and users             | no                  |
+| no             | Comment Service        | Allows users to comment on tasks                              | no                  |
 
 ## Architecture Diagram
 
 ![alt text](https://github.com/xxsawa/portfolio-project-doc/blob/main/portfolio-project-architecture.drawio.png)
+
+## Credit
+
+Video used for learning [.NET Microservices – Full Course](https://www.youtube.com/watch?v=DgVjEo3OGBI&t=8141s)
